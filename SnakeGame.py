@@ -2,7 +2,7 @@
     Title: Snake -Simple Version. Basic game using pygame
     Author: Muhammed Enes Koroglu
     Project Start: 5 Sep 2020
-    Last Edit: 21 Aug 2021
+    Last Edit: 23 Aug 2021
 """
 # import pygame  # is imported by default by Inits.
 from Inits import *
@@ -12,8 +12,8 @@ import Level
 
 class Game:
 
-	def __init__(self, arcade=True):
-		self.arcade_mode_on = arcade
+	def __init__(self, arcade_mode_on=True):
+		self.arcade_mode_on = arcade_mode_on
 		file = open(FILE_PATH + "highscore.txt", "r")
 		self.highscore = int(file.read())
 		file.close()
@@ -252,4 +252,4 @@ def initialize_levels():
 
 
 if __name__ == "__main__":
-	game = Game(arcade=True)
+	game = Game(arcade_mode_on=True)

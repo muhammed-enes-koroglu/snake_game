@@ -63,7 +63,8 @@ def is_exitable(pos, walls, count=0):
 	if count == 0:
 		return len(neighbors) >= 2
 
-	for n in neighbors:
-		if not is_exitable(n, walls, count - 1):
-			return False
+	# For some reason the code below doesn't check its neighbors' exitability properly.
+	# for n in neighbors:
+	# 	if not is_exitable(n, walls, count - 1):
+	# 		return False
 	return True
