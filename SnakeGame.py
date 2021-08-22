@@ -23,9 +23,9 @@ class Game:
 
 	def reset(self):
 		# Load background music.
-		# pygame.mixer.music.load(FILE_PATH + 'audio_files/snake_bg_2.mp3')
-		# pygame.mixer.music.play(-1)
-		# pygame.mixer.music.set_volume(0.5)
+		pygame.mixer.music.load(FILE_PATH + 'audio_files/snake_bg_2.mp3')
+		pygame.mixer.music.play(-1)
+		pygame.mixer.music.set_volume(0.5)
 
 		# Initialize variables.
 		self.levels = initialize_levels()  # is not used if self.arcade_mode_on
