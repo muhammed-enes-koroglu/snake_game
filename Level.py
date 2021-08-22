@@ -35,7 +35,7 @@ class Level:
         """ Returns a set of walls with a maximum of `nb_wall` """
         head_x = WINDOW_WIDTH // 2
         head_y = WINDOW_HEIGHT // 2
-        snake_init_pos = {(head_x + i, head_y) for i in range(-2, 2)}
+        snake_init_pos = {(head_x + i, head_y) for i in range(-2, 3)}
         snake_init_pos.update(walls)
         walls = {get_random_pos_except(snake_init_pos) for _ in range(nb_walls)}
 

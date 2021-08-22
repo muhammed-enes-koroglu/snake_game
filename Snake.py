@@ -9,8 +9,7 @@ class Snake:
     def __init__(self, walls):
         head_x = WINDOW_WIDTH // 2
         head_y = WINDOW_HEIGHT // 2
-        self.positions = [(head_x, head_y), (head_x - 1, head_y),
-                          (head_x - 2, head_y)]
+        self.positions = [(head_x - i, head_y) for i in range(0, 3)]
         self.direction = ((self.positions[0][0] - self.positions[1][0]),
                           (self.positions[0][1] - self.positions[1][1]))
         self.is_alive = True
