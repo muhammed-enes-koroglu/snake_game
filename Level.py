@@ -2,7 +2,7 @@ from Inits import *
 
 
 class Level:
-    WALL_IMAGE = pygame.image.load(FILE_PATH + 'image_files/wall3.png')
+    WALL_IMAGE = pygame.image.load(FILE_PATH + 'image_files\\wall3.png')
 
     def __init__(self, portals_horiz=set(), portals_vertical=set(), walls=set(), portal_color=YELLOW, wall_color=WHITE, target_score=40):
         assert all([is_on_horiz_border(portal) for portal in portals_horiz])

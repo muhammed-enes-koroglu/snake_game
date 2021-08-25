@@ -1,5 +1,6 @@
 import pygame
 import random
+import os
 
 # Constants
 YELLOW = (255, 255, 0)
@@ -15,16 +16,17 @@ WINDOW_HEIGHT = 15  # in UNITs
 FPS = 60
 SPEED = .15  # .1 == comfortable
 ALL_SQUARES = set([(x, y) for x in range(WINDOW_WIDTH) for y in range(WINDOW_HEIGHT)])
-FILE_PATH = "C:/Users/menes/PycharmProjects/ForFun/Snake/"
+FILE_PATH = os.getcwd() + "\\"
+
 # Initialize pygame and the game window
 pygame.init()
 pygame.display.set_caption('Snake -Simple Version')
 window = pygame.display.set_mode((WINDOW_WIDTH * UNIT, WINDOW_HEIGHT * UNIT), pygame.FULLSCREEN)
 pygame.mouse.set_visible(False)
 
-FAT_FONT = pygame.font.Font(FILE_PATH + 'comicsans-font/Ldfcomicsansbold-zgma.ttf', 25)
-SLIM_FONT = pygame.font.Font(FILE_PATH + 'comicsans-font/Ldfcomicsansbold-zgma.ttf', 20)
-VERY_SLIM_FONT = pygame.font.Font(FILE_PATH + 'comicsans-font/Ldfcomicsansbold-zgma.ttf', 15)
+FAT_FONT = pygame.font.Font(FILE_PATH + 'comicsans-font\\Ldfcomicsansbold-zgma.ttf', 25)
+SLIM_FONT = pygame.font.Font(FILE_PATH + 'comicsans-font\\Ldfcomicsans-jj7l.ttf', 20)
+VERY_SLIM_FONT = pygame.font.Font(FILE_PATH + 'comicsans-font\\Ldfcomicsans-jj7l.ttf', 15)
 # FAT_FONT = pygame.font.SysFont('comicsans', 25, bold=False, )
 # SLIM_FONT = pygame.font.SysFont('comicsans', 20, bold=False, )
 # VERY_SLIM_FONT = pygame.font.SysFont('comicsans', 15, bold=False, )

@@ -2,9 +2,9 @@ from Inits import *
 
 
 class Snake:
-    FOOD_IMAGE = pygame.image.load(FILE_PATH + 'image_files/snake_food_2.png')
-    APPLE_IMAGE = pygame.image.load(FILE_PATH + 'image_files/apple2.png')
-    SNAKE_EAT_FOOD_SOUND = pygame.mixer.Sound(FILE_PATH + 'audio_files/snake_eating.wav')
+    FOOD_IMAGE = pygame.image.load(FILE_PATH + 'image_files\\snake_food_2.png')
+    APPLE_IMAGE = pygame.image.load(FILE_PATH + 'image_files\\apple2.png')
+    SNAKE_EAT_FOOD_SOUND = pygame.mixer.Sound(FILE_PATH + 'audio_files\\snake_eating.wav')
 
     def __init__(self, walls):
         head_x = WINDOW_WIDTH // 2

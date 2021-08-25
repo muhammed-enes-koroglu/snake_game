@@ -23,7 +23,7 @@ class Game:
 
 	def reset(self):
 		# Load background music.
-		pygame.mixer.music.load(FILE_PATH + 'audio_files/snake_bg_2.mp3')
+		pygame.mixer.music.load(FILE_PATH + 'audio_files\\snake_bg_2.mp3')
 		pygame.mixer.music.play(-1)
 		pygame.mixer.music.set_volume(0.5)
 
@@ -151,7 +151,7 @@ class Game:
 		# Screen update and game over music
 		pygame.display.update()
 		pygame.time.delay(300)
-		pygame.mixer.music.load(FILE_PATH + 'audio_files/game_over.mp3')
+		pygame.mixer.music.load(FILE_PATH + 'audio_files\\game_over.mp3')
 		pygame.mixer.music.play()
 		pygame.mixer.music.set_volume(0.5)
 
@@ -182,7 +182,7 @@ class Game:
 		# Screen update and game complete music
 		pygame.display.update()
 		pygame.time.delay(300)
-		pygame.mixer.music.load(FILE_PATH + 'audio_files/you_won.mp3')
+		pygame.mixer.music.load(FILE_PATH + 'audio_files\\you_won.mp3')
 		pygame.mixer.music.play()
 		pygame.mixer.music.set_volume(0.5)
 
